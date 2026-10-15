@@ -1,0 +1,2596 @@
+<html><!----ACORRIGER ------->
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>jeu</title>
+
+<SCRIPT LANGUAGE="JavaScript">
+function Expedier() {
+	window.location="http://www.multimania.com/j3m7/formail.html"
+}
+</SCRIPT>
+
+
+<SCRIPT language=JavaScript>
+<!--
+var point=0;
+function reponse(form) {for (var i=0;i<form.length;i++) {if (form[i].checked){break}}
+var answer=""
+if (i<form.length){answer = form[i].value}
+return answer;}
+
+function solution(form) 
+{var points=0; var rep=""; var comment=""
+
+if (reponse(form.R1)=="V25") {points+=1}
+if (reponse(form.R2)=="V16") {points+=1}
+if (reponse(form.R3)=="V15") {points+=1}
+if (reponse(form.R4)=="V10")  {points+=1}
+if (reponse(form.R5)=="V9") {points+=1}
+if (reponse(form.R6)=="V6") {points+=1}
+if (reponse(form.R7)=="V23") {points+=2}
+if (reponse(form.R8)=="V4") {points+=2}
+if (reponse(form.R9)=="V1")  {points+=2}
+if (reponse(form.R10)=="V5")  {points+=1}
+if (reponse(form.R11)=="V7")  {points+=1}
+if (reponse(form.R12)=="V12")  {points+=1}
+if (reponse(form.R13)=="V2")  {points+=1}
+if (reponse(form.R14)=="V26")  {points+=1}
+if (reponse(form.R15)=="V19")  {points+=1}
+if (reponse(form.R16)=="V8")   {points+=1}
+if (reponse(form.R17)=="V18")  {points+=1}
+if (reponse(form.R18)=="V13")  {points+=1}
+if (reponse(form.R19)=="V22")  {points+=1}
+if (reponse(form.R20)=="V21")  {points+=1}
+if (reponse(form.R21)=="V20")  {points+=1}
+if (reponse(form.R22)=="V17")  {points+=1}
+if (reponse(form.R23)=="V11")  {points+=1}
+if (reponse(form.R24)=="V14")  {points+=1}
+if (reponse(form.R25)=="V24")  {points+=1}
+if (reponse(form.R26)=="V3")  {points+=2}
+
+if (points==0) {comment="Revenez sur le site, la prochaine fois, vous serez peut-être mieux inspiré(e) !"}
+
+if (points<15 && points!=0) {comment="Passeport culturel obtenu avec mention passable. Des connaissances certaines et ...quelques oublis."}                                                                
+
+if (points>=15 && points<20) {comment="Passeport culturel obtenu avec mention bien. Des connaissances certaines et ...quelques oublis."}
+
+if (points>=20 && points<25) {comment="Passeport culturel obtenu avec mention trés bien. Bravo pour cette visite du site ."}
+
+//if (points>=25 && points<30) {comment="Passeport culturel obtenu avec mention Honorable..."}
+
+//------------------------------------------------------ UTILISATION de la fonction Expedier() pour le mailto --------------------------
+
+if (points>=25 && points<30){Expedier()}
+
+//if (points<15 && points!=0) {Expedier()} //A mettre pour essaie minimum
+
+//if (points>=25 && points<30) {Expedier()} //MAXIMUM de POINTS Gagnant
+
+alert("Vous avez :  "+points+" point(s). "+"                          "+comment);}
+
+//-->
+
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFCC">
+<p>&nbsp;</p>
+
+<p align="center"><b><font face="Bangle" size="7" color="#CC6600">Jeu des
+portraits.</font></b></p>
+
+<p align="center"><font face="Bangle" size="4" color="#0000FF">( Femmes
+créoles longtemps ) </font></p>
+<p>&nbsp;</p>
+<p align="center"><font color="#FF0000" face="Copperplate Gothic Bold" size="5">Test pour
+un passeport culturel&nbsp; à l'île de
+la R</font><b><font color="#FF0000" face="Copperplate Gothic Bold" size="5">é</font></b><font color="#FF0000" face="Copperplate Gothic Bold" size="5">union.</font></p>
+
+
+<p align="center">&nbsp;</p>
+<p><b><font face="Engravers MT" size="4">Conditions.</font></b></p>
+<blockquote>
+  <p><font size="3" face="Rockwell">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Ce jeu comprend 3 tableaux : </font></p>
+  <OL>
+    <LI><FONT size="3" face="Rockwell">Celui de la </FONT><font face="Rockwell"><B><FONT color="#FF0000">LISTE DES FEMMES</FONT></B></font></LI>
+    <LI><FONT size="3" face="Rockwell">Celui de la </FONT><B><font face="Rockwell" color="#0000FF">LISTE DES PORTRAITS</font></B><FONT size="3" face="Rockwell">.</FONT></LI>
+    <LI><FONT size="3" face="Rockwell">Celui de la </FONT><FONT face="Rockwell" color="#FF00FF"><B>GRILLE DE JEU</B></FONT><FONT size="3" face="Rockwell">.</FONT></LI>
+  </OL>
+  <p><FONT size="3" face="Rockwell">&nbsp;</FONT><font face="Rockwell">Il s'agit d'associer une des femmes du <U>tableau des 26 femmes</U> à un élément correspondant du <U>tableau des 26 portraits</U> .</font></p>
+  <p>&nbsp;<font face="Rockwell"><I>Donnons
+  plutôt un exemple :</I></font></p>
+  <p><b><font size="3">Exemple :</font></b>  Dans la<FONT color="#FF00FF"><B> </B></FONT><FONT face="Rockwell" color="#FF00FF"><B>GRILLE DE JEU</B></FONT> <FONT size="5">SI</FONT> on coche <SPAN style="background-color: #FFFF00"> <input type="radio" value="V1" name="R1" checked></SPAN><FONT color="#000000">correspondant au couple</FONT> ( <FONT color="#FF0000" size="4"><B>A</B></FONT> , <FONT color="#0000FF" size="4"><B>5</B></FONT> ) <FONT size="4"> ALORS</FONT>&nbsp; <I>Françoise chatelain</I>  <B> est</B>&nbsp;<FONT face="Arial" size="2" color="#0000FF"><B> </B></FONT><FONT face="Arial" color="#009900" size="2">Femme de lettres francophone et créolophone.</FONT>&nbsp;&nbsp; <I>Ce qui est faux&nbsp; !&nbsp;</I></p>
+  <p align="left"><font face="Rockwell">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Pour le choix d' autres couples procéder de la même façon. A la fin du jeu </font><font face="Rockwell">cliquer sur le bouton &quot;<b><font color="#808000">passeport culturel&quot;</font>&nbsp;</b>
+  pour
+  connaître
+la décision finale.<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>Au dessous</u> de <b> 13 réponses
+  justes</b>, le passeport culturel n'est pas accordé.
+Les formulaires les mieux remplis reçoivent des mentions spéciales.</font></p>
+  
+  
+   
+  
+  
+  <p align="center"><font face="Rockwell"><br>
+  <B><FONT color="#FF0000">LISTE DES FEMMES</FONT></B></font></p>
+  
+  
+   
+  
+  
+  <TABLE border="1" width="91%">
+  <TR>
+    <TD width="20%">
+      <B><FONT color="#FF0000" face="Arial" size="2">A-</FONT></B><FONT FACE="Arial" SIZE="1"> Françoise Chatelain</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT color="#FF0000" face="Arial" size="2">F-</FONT></B><FONT FACE="Arial" SIZE="1"> Héva</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT color="#FF0000" face="Arial" size="2">K-</FONT></B><FONT FACE="Arial" SIZE="1"> Isnelle Amelin</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT color="#FF0000" face="Arial" size="2"><B>P-</B></FONT><FONT FACE="Arial" SIZE="1"><FONT color="#FF0000"> </FONT>Aimée Pignolet de Fresnes</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT color="#FF0000" face="Arial" size="2"><B>U- </B></FONT><FONT FACE="Arial" SIZE="1">Constance Nantiée Didier</FONT>
+    </TD></TR>
+  <TR>
+    <TD width="20%">
+      <B><FONT face="Arial" color="#FF0000" size="2">B-</FONT><FONT face="Arial" size="4" color="#FF0000"> </FONT></B><FONT FACE="Arial" SIZE="1">Juliette Dodu</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT color="#FF0000" face="Arial" size="2">G- </FONT></B><FONT FACE="Arial" SIZE="1">Marie-Catherine Sentuary</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT color="#FF0000" face="Arial" size="2">L-</FONT></B><FONT FACE="Arial" SIZE="1"><FONT color="#FF0000"> </FONT>Scholastique Mallet</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT color="#FF0000" face="Arial" size="2"><B>Q- </B></FONT><FONT FACE="Arial" SIZE="1">Marie Thérèse de Chateauvieux</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT color="#FF0000" face="Arial" size="2"><B>V- </B></FONT><FONT FACE="Arial" SIZE="1">Alice Pévérelly</FONT>
+    </TD></TR>
+  <TR>
+    <TD width="20%">
+      <B><FONT color="#FF0000" face="Arial" size="2">C-</FONT><FONT color="#FF0000" face="Arial" size="4"> </FONT></B><FONT FACE="Arial" SIZE="1">Louise Siarane</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2"><B><FONT color="#FF0000">H-</FONT> </B></FONT><FONT FACE="Arial" SIZE="1">Blanche Pierson</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT color="#FF0000" face="Arial" size="2">M- </FONT></B><FONT FACE="Arial" SIZE="1">Adèle Ferrand</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT color="#FF0000" face="Arial" size="2"><B>R-</B></FONT><FONT FACE="Arial" SIZE="1"><FONT color="#FF0000"> </FONT>Michelle Sentuary</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT color="#FF0000" face="Arial" size="2">W-</FONT></B><FONT FACE="Arial" SIZE="1"><FONT color="#FF0000"> </FONT>Célimène</FONT>
+    </TD></TR>
+  <TR>
+    <TD width="20%">
+      <B><FONT face="Arial" color="#FF0000" size="2">D-</FONT></B><FONT FACE="Arial" SIZE="1"> Marie Héloise des Landes</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2"><B><FONT color="#FF0000">I-</FONT> </B></FONT><FONT FACE="Arial" SIZE="1">Camille Jurien</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT face="Arial" size="2"><FONT color="#FF0000">N-</FONT> </FONT></B><FONT FACE="Arial" SIZE="1">Ombline Desbassyns</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT color="#FF0000" face="Arial" size="2">S- </FONT></B><FONT FACE="Arial" SIZE="1">Delphine de Villèle</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT face="Arial" size="2"><FONT color="#FF0000">X-</FONT> </FONT></B><FONT FACE="Arial" SIZE="1">Anne Mary Gaudin de Lagrange</FONT>
+    </TD></TR>
+  <TR>
+    <TD width="20%">
+      <FONT face="Arial" size="2"><B><FONT color="#FF0000">E-</FONT></B> </FONT><FONT FACE="Arial" SIZE="1">Anne Mousse</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT face="Arial" size="2"><FONT color="#FF0000">J-</FONT> </FONT></B><FONT FACE="Arial" SIZE="1">Claire Bosse</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT color="#FF0000" face="Arial" size="2">O-</FONT></B><FONT FACE="Arial" SIZE="1"> Esther Lelièvre</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT color="#FF0000" face="Arial" size="2"><B>T- </B></FONT><FONT FACE="Arial" SIZE="1">Victorine Monniot</FONT>
+    </TD>
+    <TD width="20%">
+      <B><FONT face="Arial" size="2"><FONT color="#FF0000">Y-</FONT> </FONT></B><FONT FACE="Arial" SIZE="1">Nancy Martel</FONT>
+    </TD></TR>
+  <TR>
+    <TD width="80%" colspan="4" bgcolor="#FFFFCC" bordercolor="#FFFFCC" bordercolorlight="#000000" bordercolordark="#000000">
+      &nbsp;
+    </TD>
+    <TD width="20%" bgcolor="#FFFFCC" bordercolor="#FFFFCC" bordercolorlight="#000000" bordercolordark="#000000">
+      <B><FONT color="#FF0000" face="Arial" size="2">Z- </FONT></B><FONT FACE="Arial" SIZE="1">Jeanne Paule Honorine Visnelda</FONT>
+    </TD></TR>
+  </TABLE>
+  <p align="center">&nbsp;</p>
+  
+  
+   
+  
+  
+  <p align="center"><B><font face="Rockwell" color="#0000FF">LISTE DES PORTRAITS</font></B></p>
+  
+  
+   
+  
+  
+  <TABLE border="1" width="91%">
+  <TR>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>1-&nbsp;</B></FONT><FONT FACE="Arial" SIZE="1" color="#000000"> Femme du monde altruiste, elle met sa richesse au service de l' église et des plus pauvres</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>6- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Vivre libre ou mourir&nbsp;</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>11- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Femme &quot;troubadour&quot;, compositeur, ses chansons épinglent les travers de ses contemporains.</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>16- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">A Pithiviers, une créole face à l'invasion prussienne en 1870.&nbsp;</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>21- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Comme ceux de la comtesse de Ségur, ses récits enchantent les jeunes générations.</FONT>
+    </TD></TR>
+  <TR>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>2</B></FONT><FONT face="Arial" size="2" color="#0000FF"><B>- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Une femme peintre de talent à l'île Bourbon.&nbsp;</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>7- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Un fort engagement politique et social au service de la promotion féminine.</FONT><FONT FACE="Arial" SIZE="1" color="#009900">&nbsp;</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>12- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Exemple de piété et de dévouement à autrui.&nbsp;</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>17- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Un engagement politique fauché à la fleur de l'âge.&nbsp;</FONT>
+    </TD>
+    <TD width="20%">
+      <B>
+      <FONT face="Arial" size="2" color="#0000FF">22-</FONT>
+ </B><FONT FACE="Arial" SIZE="1" color="#000000">Une vie consacrée à la religion, brutalement interrompue.</FONT>
+    </TD></TR>
+  <TR>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>3</B></FONT><FONT face="Arial" size="2" color="#0000FF"><B>- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Ses talents de guérisseur lui permettent de soulager la souffrance des autres.&nbsp;</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>8- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">A l'origine de la première communauté religieuse créole, les filles de Marie.</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>13- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Muse du poète A. Chénier, sa beauté et son charme séduisent les milieux mondains parisiens et européens.</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>18- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Première femme maire.&nbsp;</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>23- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Muse du poète Bertin.</FONT>
+    </TD></TR>
+  <TR>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>4</B></FONT><FONT face="Arial" size="2" color="#0000FF"><B>- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Actrice de théâtre, contemporaine de Sarah Bernhardt, la comédie française lui ouvre ses portes.&nbsp;</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>9- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Première femme née à la Réunion.</FONT>
+    </TD>
+    <TD width="20%">
+      <B>
+      <FONT face="Arial" size="2" color="#0000FF">14-</FONT>
+      <FONT color="#000000"> </FONT> </B><FONT FACE="Arial" SIZE="1" color="#009900">Ecrivain d'une grande sensibilité, proche de la nature, attachée à son amour perdu.</FONT>
+    </TD>
+    <TD width="20%">
+      <B>
+      <FONT face="Arial" size="2" color="#0000FF">19-</FONT>
+      <FONT color="#000000"> </FONT> </B><FONT FACE="Arial" SIZE="1" color="#009900">Malgré ses deux mariages de raison, elle reste fidèle à de Parny, son premier amour.&nbsp;</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>24- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Une comédienne de talent d'une grande beauté.</FONT>
+    </TD></TR>
+  <TR>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>5</B></FONT><B><FONT face="Arial" size="2" color="#0000FF">-</FONT><FONT face="Arial" size="2" color="#000000"> </FONT> </B><FONT FACE="Arial" SIZE="1" color="#000000">Femme de lettres francophone et créolophone.</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>10- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">L'impossible amour de Léon Dierx.</FONT>
+    </TD>
+    <TD width="20%">
+      <B>
+      <FONT face="Arial" size="2" color="#0000FF">15-</FONT>
+      <FONT face="Arial" size="2" color="#000000"> </FONT> </B><FONT FACE="Arial" SIZE="1" color="#000000">Une descendance prolifique, au fil des temps.</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>20- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Cantatrice célèbre en Europe et aux Etats Unis.&nbsp;</FONT>
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>25- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Trois veuvages... quatre mariages.</FONT>
+    </TD></TR>
+  <TR>
+    <TD width="20%">
+      &nbsp;
+    </TD>
+    <TD width="20%">
+      &nbsp;
+    </TD>
+    <TD width="20%">
+      &nbsp;
+    </TD>
+    <TD width="20%">
+      &nbsp;
+    </TD>
+    <TD width="20%">
+      <FONT face="Arial" size="2" color="#0000FF"><B>26- </B></FONT><FONT FACE="Arial" SIZE="1" color="#000000">Une femme ouverte au progrès technique, fermée à l'évolution sociale.</FONT>
+    </TD></TR>
+  </TABLE>
+  <p align="left">&nbsp;</p>
+  
+  
+   
+  
+  
+  <p align="center"><FONT face="Rockwell" color="#FF00FF" size="5"><B>GRILLE DE JEU</B></FONT></p>
+  
+  
+   
+ <FORM name=QCM > 
+  
+  <DIV align="center" style="width: 912; height: 670">
+    <CENTER><TABLE border="1" width="66%" height="675">
+    <TR>
+      <TD width="3%" align="center" bgcolor="#FF9966" height="19">
+        &nbsp;
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">1</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">2</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">3</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">4</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">5</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">6</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">7</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">8</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">9</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">10</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">11</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">12</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">13</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">14</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">15</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">16</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">17</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">18</FONT></B>
+      </TD>
+      <TD width="2%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">19</FONT></B>
+      </TD>
+      <TD width="2%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">20</FONT></B>
+      </TD>
+      <TD width="2%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">21</FONT></B>
+      </TD>
+      <TD width="2%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">22</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">23</FONT></B>
+      </TD>
+      <TD width="3%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">24</FONT></B>
+      </TD>
+      <TD width="2%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">25</FONT></B>
+      </TD>
+      <TD width="23%" align="center" bgcolor="#FFFF00" height="19">
+        <B><FONT color="#0000FF">26</FONT></B>
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>A</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R1">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R1">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R1">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R1">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R1">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R1">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R1">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R1">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>B</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R2">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R2">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R2">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R2">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R2">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R2">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R2">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R2">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>C</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R3">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R3">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R3">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R3">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R3">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R3">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R3">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R3">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>D</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R4">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R4">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R4">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R4">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R4">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R4">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R4">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R4">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>E</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R5">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R5">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R5">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R5">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R5">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R5">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R5">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R5">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>F</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R6">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R6">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R6">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R6">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R6">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R6">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R6">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R6">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>G</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R7">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R7">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R7">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R7">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R7">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R7">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R7">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R7">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>H</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R8">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R8">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R8">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R8">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R8">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R8">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R8">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R8">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>I</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R9">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R9">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R9">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R9">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R9">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R9">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R9">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R9">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>J</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R10">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R10">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R10">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R10">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R10">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R10">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R10">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R10">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>K</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R11">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R11">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R11">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R11">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R11">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R11">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R11">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R11">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>L</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R12">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R12">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R12">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R12">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R12">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R12">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R12">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R12">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>M</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R13">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R13">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R13">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R13">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R13">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R13">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R13">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R13">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>N</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R14">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R14">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R14">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R14">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R14">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R14">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R14">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R14">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>O</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R15">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R15">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R15">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R15">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R15">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R15">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R15">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R15">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>P</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R16">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R16">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R16">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R16">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R16">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R16">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R16">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R16">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>Q</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R17">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R17">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R17">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R17">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R17">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R17">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R17">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R17">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>R</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R18">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R18">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R18">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R18">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R18">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R18">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R18">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R18">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>S</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R19">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R19">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R19">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R19">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R19">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R19">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R19">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R19">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>T</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R20">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R20">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R20">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R20">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R20">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R20">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R20">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R20">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>U</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R21">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R21">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R21">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R21">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R21">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R21">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R21">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R21">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>V</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R22">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R22">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R22">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R22">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R22">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R22">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R22">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R22">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>W</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R23">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R23">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R23">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R23">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R23">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R23">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R23">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R23">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>X</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R24">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R24">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R24">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R24">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R24">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R24">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R24">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R24">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>Y</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R25">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R25">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R25">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R25">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R25">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R25">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R25">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R25">
+      </TD></TR>
+    <TR>
+      <TD width="3%" align="center" bgcolor="#00FFFF" height="19">
+        <FONT color="#FF0000"><B>Z</B></FONT>
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V1" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V2" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V3" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V4" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V5" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V6" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V7" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V8" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V9" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V10" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V11" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V12" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V13" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V14" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V15" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V16" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V17" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V18" name="R26">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V19" name="R26">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V20" name="R26">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V21" name="R26">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V22" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V23" name="R26">
+      </TD>
+      <TD width="3%" height="19">
+        <input type="radio" value="V24" name="R26">
+      </TD>
+      <TD width="2%" height="19">
+        <input type="radio" value="V25" name="R26">
+      </TD>
+      <TD width="23%" height="19">
+        <input type="radio" value="V26" name="R26">
+      </TD></TR>
+      
+</table>
+<!--------------------------------------------------------------------------------------------------------------->
+
+      
+    </CENTER>
+  </DIV>
+      <CENTER>
+  
+  
+   
+  
+  
+  <TABLE border="1" width="66%">
+      
+      <tr>
+    <td width="960" align="center" height="19" bgcolor="#C0C0C"><INPUT name=valide onclick=javascript:solution(this.form); type=button value="PASSEPORT CULTUREL"><input type="reset" value="Rétablir" name="B2"></td>
+  </tr>
+</table>
+  
+    </CENTER>
+  </form> 
+   
+  
+  
+  
+  
+</blockquote>
+
+ 
+
+</body>
+
+</html>

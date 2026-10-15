@@ -1,0 +1,239 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+
+<META NAME="Description" CONTENT="site parlant des femmes réunionnaises célèbres d'antan qui ont beaucoup donné à leur île de la Réunion dans presque tous les dommaines..">
+<META NAME="Keywords" CONTENT="réunion;REUNION;Réunion;Ile;île;bourbon;BOURBON;Héva;EVA;HEVA;ISNELLE;AMELIN;Isnelle;Amelin;vergès;VERGES;Vergès;esclaves;esclavage;Débassyns;ombline;nancy;Nancy;Didiée;Nantier;martel;Martel;religions;littérature;arts;politique">
+<META NAME="Author" CONTENT="Jean-Marie Boyer">
+
+
+<title>Le femmes créoles réunionnaises célèbres</title>
+
+<style TYPE="text/css">
+<!--
+body{
+overflow:scroll;overflow-x:hidden
+}
+.popper
+{
+position : absolute;
+visibility : hidden;
+}
+//-->
+</style>
+
+<!---------------------->
+<SCRIPT>
+function LinkMessage(text) { window.status = text; }
+</SCRIPT>
+<!---------------------->
+
+<SCRIPT LANGUAGE="Javascript1.2">
+// Copyright Frank Milard - http://www.asaisir.com/a-la-page
+IE4 = (document.all) ? 1 : 0;
+NS4 = (document.layers) ? 1 : 0;
+VERSION4 = (IE4 | NS4) ? 1 : 0;
+if (!VERSION4) event = null;
+
+function helpGetOffset(obj, coord) {
+	var val = obj["offset"+coord] ;
+	if (coord == "Top") val += obj.offsetHeight;
+	while ((obj = obj.offsetParent )!=null) {
+		val += obj["offset"+coord];
+		if (obj.border && obj.border != 0) val++;
+	}
+	return val;
+}
+
+function helpDown () {
+	if (IE4) document.all.helpBox.style.visibility = "hidden";
+	if (NS4) document.helpBox.visibility = "hidden";
+}
+
+function helpOver (event,texte) {
+	if (!VERSION4) return;
+
+	var ptrObj, ptrLayer;
+	if (IE4) {
+		ptrObj = event.srcElement;
+		ptrLayer = document.all.helpBox;
+	}
+	if (NS4) {
+		ptrObj = event.target;
+		ptrLayer = document.helpBox;
+	}
+
+	if (!ptrObj.onmouseout) ptrObj.onmouseout = helpDown;
+
+	var str = '<DIV CLASS="helpBoxDIV">'+texte+'</DIV>';
+	if (IE4) {
+		ptrLayer.innerHTML = str;
+		ptrLayer.style.top  = helpGetOffset (ptrObj,"Top") + 2;
+		ptrLayer.style.left = helpGetOffset (ptrObj,"Left");
+		ptrLayer.style.visibility = "visible";
+	}
+	if (NS4) {
+		ptrLayer.document.write (str);
+		ptrLayer.document.close ();
+		ptrLayer.document.bgColor = "yellow";
+		ptrLayer.top  = ptrObj.y + 20;
+		ptrLayer.left = ptrObj.x;
+		ptrLayer.visibility = "show";
+	}
+}
+// -->
+</SCRIPT>
+
+<STYLE TYPE='text/css'>
+<!--
+#helpBox {
+	position: absolute;
+	z-index: 1000;
+	top: 0px;
+	left: 0px;
+	width: 160px;
+}
+DIV.helpBoxDIV {
+	width: 160px;
+	padding: 2px;
+	background: yellow;
+	border: 1px solid black;
+	color: black;
+	font-family: Arial,Helvetica;
+	font-style: Normal;
+	font-weight: Normal;
+	font-size: 12px;
+	line-height: 14px;
+}
+-->
+</STYLE>
+
+
+</head>
+
+<body bgcolor="#000066">
+
+<DIV ID="topdeck" CLASS="popper"><a name="menu"></a></DIV>
+
+<DIV ID="helpBox"></DIV>
+<p align="center">
+
+
+<SCRIPT>
+
+/*
+*/
+
+var nav = (document.layers); 
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove = get_mouse;
+
+function pop(msg,bak) 
+{
+var content ="<TABLE WIDTH=300 BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#000000><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF SIZE=2><B> QUOI DE NEUF ?</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR="+bak+"><TR><TD><FONT COLOR=#000000 SIZE=2><DIV ALIGN=left>"+msg+"</DIV></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+//var content ="<TABLE WIDTH=300 BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#000000><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF SIZE=2><B> QUOI DE NEUF ?</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR="+bak+"><TR><TD><FONT COLOR=#000000 SIZE=2><CENTER>"+msg+"</CENTER></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+
+if (nav) 
+{ 
+skn.document.write(content); 
+    skn.document.close();
+    skn.visibility = "visible";
+}
+else if (iex) 
+{
+    document.all("topdeck").innerHTML = content;
+    skn.visibility = "visible"; 
+}
+}
+
+function get_mouse(e) 
+{
+    var x = (nav) ? e.pageX : event.x+document.body.scrollLeft; 
+    var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+    skn.left = x - 60;
+skn.top = y+20;
+}
+
+function kill() 
+{
+skn.visibility = "hidden";
+}
+
+</SCRIPT>
+
+
+
+
+
+<p align="center"><b><font color="#FFFF00" face="Comic Sans MS" size="6"><br>
+Les Femmes
+réunionnaises célèbres d'antan.</font></b></p>
+
+<!--<p align="center">
+<STRONG><FONT face=Arial size=2><a href="#" ONMOUSEOVER="pop('<FONT COLOR=#0000FF><BR>*********** Modifications ***********<BR></FONT><BR> 1 -Cliquer sur la rubrique * Vie mondaine * du menu.<BR>- <FONT COLOR=#FF0000>Dans la page consacrée aux soeurs Sentuary, des liens rouges ont été ajoutés... </FONT ><BR><BR><BR>','yellow')" ; ONMOUSEOUT="kill()"><IMG SRC="images/nouveau.gif" BORDER=0 width=61 height=16></a></font></strong>-->
+
+<table border="0" width="100%" height="189">
+  <tr>
+    <td width="25%" height="183">
+    
+    
+  <!-- <p align="center"><a href="femmescreoles/index0.htm"><img border="0" src="femmescreoles/images/martel.jpg" width="168" height="182"></a></td> -->   
+     
+
+
+ <p align="center"><A href="index2.htm"><IMG border="0" src="images/martel.jpg" width="168" height="182"></A></td>
+    <td width="43%" height="177">
+      <p align="center"><font color="#FFFFFF" size="4" face="Arial Narrow"><b>Ile
+      de la Réunion</b></font></p>
+      <p align="left"><font color="#FFFFFF" size="2" face="Arial Narrow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Ile tropicale de l'océan indien, située à </font><font size="2" face="Arial Narrow" color="#FFFF00">10
+      000 km </font><font color="#FFFFFF" size="2" face="Arial Narrow">de
+      l'Europe entre Madagascar ( 880 km) et l'île Maurice ( 200 km ), la
+      Réunion ( autrefois île Bourbon ) a un</font><font size="2" face="Arial Narrow" color="#FFFF00">
+      relief montagneux</font><font color="#FFFFFF" size="2" face="Arial Narrow">.
+      Le Piton des Neiges ( 3069 m ) est un volcan éteint, le </font><font size="2" face="Arial Narrow" color="#FFFF00">Piton
+      de la Fournaise est toujours en activité.</font><font color="#FFFFFF" size="2" face="Arial Narrow"><br>
+      Terre française, </font><font size="2" face="Arial Narrow" color="#FFFF00">département
+      d'outre mer </font><font color="#FFFFFF" size="2" face="Arial Narrow">depuis
+      1946, la Réunion s'étend sur 2512 km². Par sa population ( 706 300
+      hab.) venue d'Europe, d'Afrique et d'Asie depuis le XVIIe siècle l'île
+      est</font><font size="2" face="Arial Narrow" color="#FFFF00"> un carrefour
+      culturel.</font></p>
+    </td>
+    <td width="32%" height="177">
+      <p align="center"><A href="index2.htm"><IMG border="0" src="images/reun.jpg" width="226" height="182"></A></td>
+  </tr>
+</table>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<CENTER>
+          <!-- DÉBUT DU CODE DU COMPTEUR 
+<SCRIPT LANGUAGE="JavaScript" SRC="http://www.webdonline.com/fr/services/compteur/compteur.asp?id=643148">
+</SCRIPT></CENTER>
+<!-- FIN DU CODE DU COMPTEUR -->
+</p>
+<!--<p align="center"><A href="index2.htm" onMouseover="helpOver(event,'<b>Le 1er tome</b> de ce livre <u>en vente</u> à partir du 14 mai 05<br>à la REUNION\'')"><img border="0" src="images/pierson.gif" width="129" height="182"></A><br>-->
+
+<p align="center"><a target="_blank" href="fotos.htm"><img border="0" src="images/pierson.gif" width="129" height="182"></a><br>
+&nbsp;<b><font face="Arial Narrow" size="5" color="#FF9933">S</font><font face="Arial Narrow" size="3" color="#FF9933">ite  optimisé pour un affichage en</font><font color="#FFFFFF" face="Arial Narrow" size="3">
+        </font><font color="#FFFF00" face="Arial Narrow" size="5"> 800 X 600</font><font color="#FFFFFF" size="4" face="Arial Narrow"> </font>
+<font face="Arial Narrow" size="6" color="#FF9933">-
+        </font><font color="#FF9933" size="4" face="Arial Narrow">16 </font><font color="#FF9933"><font face="Arial Narrow" size="3"> millions de couleurs.
+        Veuillez cliquer sur</font><font color="#FFFFFF" size="4" face="Arial Narrow"> </font></font><font size="4" face="Arial Narrow" color="#FFFF00">une
+        des images </font><font face="Arial Narrow" size="3" color="#FF9933">pour
+        entrer...</font></b> </p>
+
+</body>
+
+</html>

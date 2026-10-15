@@ -1,0 +1,402 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0042)file://G:\Model-Site-Wife\fenetr-main.html -->
+<!-- saved from url=(0040)http://www.femmes-alsace.com/middle.html --><HTML>
+<HEAD><TITLE>fenetre principal</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<style TYPE="text/css">
+<!--
+body{
+overflow:scroll;overflow-x:hidden
+}
+.popper
+{
+position : absolute;
+visibility : hidden;
+}
+//-->
+</style>
+
+
+
+<style TYPE="text/css">
+<!--
+#footerNoDHMTL {
+	position:absolute;
+	visibility: hidden;
+}
+#footerN1 {
+	position: relative;
+	z-index: 100;
+	width: 450px;
+	height: 20px;
+
+	clip:rect (0px,450px,20px,0px);
+}
+#footerN2 {
+	position:absolute;
+	z-index: 200;
+	width: 450px;
+	height: 20px;
+
+	clip:rect (0px,450px,20px,0px);
+}
+#footerN3 { 
+	position:absolute;
+	z-index: 300;
+	width: 450px;
+	height: 20px;
+
+	text-align: center;
+}
+P.footerP {
+	text-align: center;
+	text-decoration: none;
+
+	color: red;
+	font-family: Arial,Helvetica;
+	font-style: Normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 20px;
+}
+-->
+</style>
+
+
+<!--<STYLE type=text/css>
+BODY { BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(images/BGF.gif)
+ }
+</STYLE>-->
+
+
+<script LANGUAGE="Javascript">
+<!-- 
+
+//Titre
+	footerTitre = "Bienvenue sur cette page d'accueil";
+
+//Vous pouvez y mettre un autre texte ou votre copyright par exemple
+	footerCopyright = "N'oubliez pas de signer le livre d'or.";
+
+//Temps en miliseconde avant le changement du texte
+	footerWait  = 50;
+
+
+NS4 = IE4 = VERSION4 = 0;
+function initArray() {
+ for(i=0;i<initArray.arguments.length; i++)
+  this[i] = initArray.arguments[i];
+}
+var Months= new initArray("Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre");
+var Days  = new initArray("Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche");
+
+function CalcHello () {
+	var today = new Date();
+	var hrs = today.getHours();
+	var hello = "Bonjour";
+	if (hrs > 17) hello = "Bonsoir";
+	if (hrs <6 ) hello = "Bonne nuit";
+	return (hello+", "+footerTitre);
+}
+
+function CalcDate () {
+	var today = new Date();
+	var mts = today.getMinutes();
+
+	var mts = (mts < 10) ? "0"+mts : mts; 
+	return ("Nous sommes le "+Days[today.getDay()]+" "+today.getDate()+" "+Months[today.getMonth()]+" "+today.getYear()+", il est "+today.getHours()+" h "+mts);
+}
+
+function CalcLastmod () {
+	var day = new Date (document.lastModified);
+	if (day == 0) return ("Date de derniere modification de cette page inconnue");
+	return ("Derniere modification de cette page: "+Days[day.getDay()]+" "+day.getDate()+" "+Months[day.getMonth()]+" "+day.getYear());
+}
+
+function footerInit () {
+        if (VERSION4) {
+
+		footerTXT = new Array;
+		footerTXT[0] = CalcHello ();
+		footerTXT[1] = CalcDate ();
+		footerTXT[2] = CalcLastmod ();
+		footerTXT[3] = footerCopyright;
+
+		if (NS4) {
+       			footerObj = document.footerN1;
+			footerObj = footerObj.document.footerN2;
+			footerObj = footerObj.document.footerN3;
+		}
+		if (IE4) footerObj = document.all.footerN3;
+
+		footerCount = 0;
+		footerChangeString (0);
+		footerSynchro = -footerWait;
+		footerTimer1 = setInterval("footerScroll()",50);
+		footerTimer2 = setInterval("footerActualiser()",10000);
+	}
+}
+
+function footerActualiser () {
+        if (VERSION4) {
+
+		footerTXT[0] = CalcHello ();
+		footerTXT[1] = CalcDate ();
+	}
+}
+
+NS4 = (document.layers) ? 1 : 0;
+IE4 = (document.all) ? 1 : 0;
+VERSION4 = (NS4|IE4) ? 1 : 0;
+
+if(NS4){oW=innerWidth;oH=innerHeight;onresize=function(){if(innerWidth!=oW||innerHeight!=oH)location.reload()}}
+
+function footerChangeString (flag) {
+	var Ind=footerCount;
+	if (flag) Ind = footerCount+1;
+	if (Ind==footerTXT.length) Ind=0;
+
+	footerWrite ("<P CLASS=footerP>"+footerTXT[footerCount]+"<BR>"+footerTXT[Ind]+"</P>");
+
+	if (flag) if (++footerCount >= footerTXT.length) footerCount=0;
+}
+
+function footerWrite (str) {
+	if (NS4) {
+		with (footerObj.document) {
+			write(str);
+			close();
+		}
+	}
+	if (IE4) footerObj.innerHTML = str;
+}
+
+function footerScroll () {
+	var dec = 0;
+        if (++footerSynchro == 0) footerChangeString (1);
+	if (footerSynchro > 0 && footerSynchro < 20) dec=footerSynchro;
+        if (footerSynchro == 20) {
+		footerSynchro= -footerWait;
+		footerChangeString (0);
+	}
+	if (NS4) footerObj.top  = -dec;
+	if (IE4) footerObj.style.top = -dec;
+}
+// -->
+</script>
+<STYLE>A:hover {
+	COLOR: #ffffff
+}
+</STYLE>
+<!-- "This document is made in Stone's WebWriter 2" -->
+
+<SCRIPT language=JavaScript>
+<!-- 
+function openWindow(url, name, w, h) { popupWin = window.open(url, name, 'scrollbars,width=' + w + ',height=' + h);
+}
+// -->
+</SCRIPT>
+
+
+<META content="Microsoft FrontPage 4.0" name=GENERATOR>
+<base target="_self">
+</head>
+
+
+
+
+
+<body onload="footerInit()" text="#000000" bgcolor="#FFFFFF">
+
+<DIV ID="topdeck" CLASS="popper"><a name="menu"></a></DIV>
+
+
+<p align="center">
+
+
+<SCRIPT>
+
+/*
+*/
+
+var nav = (document.layers); 
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove = get_mouse;
+
+function pop(msg,bak) 
+{
+var content ="<TABLE WIDTH=300 BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#000000><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF SIZE=2><B> QUOI DE NEUF ?</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR="+bak+"><TR><TD><FONT COLOR=#000000 SIZE=2><DIV ALIGN=left>"+msg+"</DIV></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+//var content ="<TABLE WIDTH=300 BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#000000><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF SIZE=2><B> QUOI DE NEUF ?</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR="+bak+"><TR><TD><FONT COLOR=#000000 SIZE=2><CENTER>"+msg+"</CENTER></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+
+if (nav) 
+{ 
+skn.document.write(content); 
+    skn.document.close();
+    skn.visibility = "visible";
+}
+else if (iex) 
+{
+    document.all("topdeck").innerHTML = content;
+    skn.visibility = "visible"; 
+}
+}
+
+function get_mouse(e) 
+{
+    var x = (nav) ? e.pageX : event.x+document.body.scrollLeft; 
+    var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+    skn.left = x - 60;
+skn.top = y+20;
+}
+
+function kill() 
+{
+skn.visibility = "hidden";
+}
+
+</SCRIPT>
+
+
+<SCRIPT language=JavaScript>
+<!-- debut du script
+function openWindow(url, name, w, h,l,t) {
+  
+  popupWin = window.open(url, name, 'scrollbars,width=' + w + ',height=' + h + ',left=' + l + ',top=' + t);
+}
+// Fin du script -->
+</SCRIPT>
+
+
+<p align="center"><img border="0" src="images/acc-fem.gif" width="445" height="312">
+
+<p align="center">
+<STRONG><FONT face=Arial size=2><a href="#" ONMOUSEOVER="pop('<FONT COLOR=#0000FF><BR><CENTER>*********** Du nouveau ! ***********</CENTER></FONT><BR> 1 -<B>Cliquer</B> sur la rubrique<B><U><FONT COLOR=#FF9933> * Jeu des portraits *</FONT ></U></B> du menu de la page d´accueil pour avoir accès au <U><B><FONT COLOR=#FF0000>jeu des portraits.</FONT></B></U><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size=4><b><font color=#ff3300>C´est un Quizz sur ce site.</font></b></font><BR><BR><BR>','yellow')" ; ONMOUSEOUT="kill()"><IMG SRC="images/nouveau.gif" BORDER=0 width=61 height=16></a></font></strong></p>
+
+<!--<p align="center"><img border="0" src="images/nouveau.gif" width="61" height="16"></p>-->
+<div align="center">
+  <center>
+<table border="0" width="111%" cellspacing="3" height="347">
+  <tr>
+    <td width="24%" valign="top" align="center" height="341"><p><b><i><font size="4" color="#CC9900">Larénion
+      lé éné</font></i></b><br>
+      <br>
+      <font face="Arial Narrow" color="#800080" size="1">Promié débi,<br>
+      Le tréfon n loséan Indien,<br>
+      Total fénoir<br>
+      Poison san zié<br>
+      Minm laz Bondié<br>
+      I mor zot vi trankilman.</font></p>
+      <p><font face="Arial Narrow" color="#800080" size="1">Episa lo félir<br>
+      Episa lo pétir<br>
+      Lo fon la mér i krak<br>
+      Lo fon la mér i kas<br>
+      Gran dézord<br>
+      Limièr zéklèr<br>
+      Féso lanfèr !<br>
+      La tèr i komans vomi son trip dofè...</font><br>
+      <br>
+      <i><font size="2">Axel Gauvin.</font></i></p>
+    </td>
+    <td width="43%" height="341">
+      <p align="center"><img border="0" src="images/cart-ancien3-g.gif" width="230" height="225"><p align="center"><i><font size="2">L'île
+      Bourbon&nbsp; au début du XVIIIe siècle<br>
+      Carte de M. Mallet.</font></i> <i><font size="1">(Coll. D. Ubertini).</font></i></td>
+    <td width="52%" valign="top" align="center" height="341"><b><i><font size="4" color="#CC9900">Mon
+      île</font></i></b>
+      <p>
+          <font color="#800080" size="1" face="Arial Narrow">Une Étoile a jailli<br>
+          Et de l’ombre a surgi&nbsp;<br>
+          Bourbon, l’île jolie, créée par l’Eternel.<br>
+          <br>
+          Et le ciel et la mer,&nbsp;<br>
+          Tous deux en un éclair,&nbsp;<br>
+          L’ont couverte d’or, de bleu, de rares merveilles.
+          </font>
+      </p>
+      <p>
+          <font face="Arial Narrow" size="1" color="#800080">
+          Pays de mes aïeux,&nbsp;<br>
+          Aimé de tous les Dieux,&nbsp;<br>
+          La nature vraiment l’a faites “Pure Perle”<br>
+          <br>
+          Le soleil dès l’aurore<br>
+          Jette ses rayons d’or<br>
+          Sur ses cimes, ses plaines, et sa mer si belle.<br>
+          </font><br>
+          <i>
+          <font face="Rockwell" color="#000000" size="2">
+          Claire Bosse.</font></i></p>
+    </td>
+  </tr>
+</table>
+  </center>
+</div>
+<div align="center">
+  <center>
+<table border="0" cellspacing="1" width="25%">
+  <tr>
+    <td width="29%" align="center"><a href="http://www.abc-creatweb.com/" onclick="openWindow('','pollWin',770,300,10,30)" target=pollWin><img border="0" src="images/ic-conception.gif" width="107" height="97"></a></td>
+    
+    <td width="71%" height="37" valign="middle" align="center">
+      <script language="JavaScript1.1">
+<!--
+hsh = new Date();
+hsd = document;
+hsi = '<a href="http://www.xiti.com/xiti.asp?s=24753" '
+hsi += ' TARGET="_top"><img width="39" height="25" border=0 src="http://logv3.xiti.com/hit.xiti?s=24753'
+hsi += '&p=&hl=' + hsh.getHours() + 'x' + hsh.getMinutes() + 'x' + hsh.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{s=screen;hsi += '&r=' + s.width + 'x' + s.height + 'x' + s.pixelDepth + 'x' + s.colorDepth;}
+hsd.writeln(hsi + '&ref=' + hsd.referrer.replace('&', '$') + '" alt="Mesurez votre audience"></a>');
+//-->
+</script>
+<noscript>
+<a href="http://www.xiti.com/xiti.asp?s=24753" TARGET="_top"><img border=0 src="http://logv3.xiti.com/hit.xiti?s=24753&p=&" alt="Mesurez votre audience"></a>
+</noscript>
+    </td>
+  </tr>
+</table>
+
+  </center>
+</div>
+<p>&nbsp;</p>
+<p align="center"><A TARGET="_blank" HREF="http://www.run974.com/"><IMG ALT="Le guide de l'ile de la Réunion" SRC="http://www.run974.com/partenariat/banniere/run974.gif" BORDER=1 width=468 height=60></A>
+</p>
+<BR>
+<HR color=#0000ff width="50%">
+
+<DIV align=center>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="15%">
+  <TBODY>
+  <TR>
+    <TD width="100%">
+      <P align=center><FONT color=#800080><a href="corresp.htm" onclick="openWindow('','pollWin',540,250)" target="pollWin"><IMG 
+      border=0 height=39 src="images/write.gif" 
+      width=65></a></FONT></P></TD></TR>
+  <TR>
+    <TD width="100%">
+      <P align=center><a href="mailto:kosaladi@wanadoo.fr?subject='A propos de ce site'">Webmestre</a></P>
+      <P align=center>&nbsp;</P>
+    </TD></TR></TBODY></TABLE></DIV>
+<CENTER>
+
+
+<table cellspacing="0" cellpadding="0" border="0" width=10 height="20" style="color: #FFFFFF">
+  <tr valign="Top">
+    <td width="450">
+      <div id="footerN1">
+        <div id="footerNoDHMTL">
+          <p align="CENTER"><font size="-1" color="black">Pas de DHTML sans <i><b>Internet
+          Explorer V4</b></i> ou <i><b>Netscape V4</b></i></font></p>
+        </div>
+        <div id="footerN2">
+          <div id="footerN3" style="width: 450; height: 19">
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+<P></CENTER></P></BODY></HTML>
